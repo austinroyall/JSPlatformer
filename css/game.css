@@ -7,8 +7,9 @@
 
 .actor  { position: absolute;  }
 .player { background: rgb(64, 64, 64); }
-
 .bounce {background: yellow;}
+.coin { background: rgb(241, 229, 89); }
+.move {background: green; }
 
 .game {
   overflow: hidden;
