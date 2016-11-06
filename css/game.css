@@ -1,19 +1,193 @@
-.background    { background: rgb(52, 166, 251);
+.background    {background: red;
                  table-layout: fixed;
-                 border-spacing: 0;   }
+                 border-spacing: 0;} /*just in case the gradients fail*/
+
+/*check my code to see this more clearly*/
+/*the background is updated by +1 everytime the player gets a color tint*/
+.backgroundcolor0{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red);
+  /* Standard syntax */
+  background: linear-gradient(to right, red); 
+}
+
+.backgroundcolor1{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange); 
+}
+
+.backgroundcolor2{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,yellow);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow); 
+}
+
+.backgroundcolor3{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,yellow,green);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow,green);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow,green);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow,green); 
+}
+
+.backgroundcolor4{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow,green,blue);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow,green,blue);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow,green,blue); 
+}
+
+.backgroundcolor5{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+.backgroundcolor6{
+	  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo); 
+}
+
+/*basic class stuff*/
 .background td { padding: 0;          }
 .lava          { background: rgb(255, 100, 100); }
-.wall          { background: white;   }
+.wall          { background: black;   }
 
 .actor  { position: absolute;  }
-.player { background: rgb(64, 64, 64); }
-.bounce {background: yellow;}
-.coin { background: rgb(241, 229, 89); }
+.player { background: rgb(64, 64, 64, 1);}
+.bounce {background: pink;}
+.movebounce {background: pink;
+border-radius: 25px;}
+.coin { background: white; 
+border-radius: 50px;}
+
+/*was going to use this for the coins but never did, left it anyway in memory of what couldve been*/
+.health1{
+	-webkit-filter:hue-rotate(0deg) brightness(.2);
+    filter:hue-rotate(0deg) brightness(.2);
+}
+.health2{
+		-webkit-filter:hue-rotate(0deg) brightness(.5);
+    filter:hue-rotate(0deg) brightness(.5);
+}
+.health3{
+		-webkit-filter:hue-rotate(0deg) brightness(1);
+    filter:hue-rotate(0deg) brightness(1);
+}
+.health4{
+		-webkit-filter:hue-rotate(0deg) brightness(1.2);
+    filter:hue-rotate(0deg) brightness(1.2);
+}
+.health5{
+		-webkit-filter:hue-rotate(0deg) brightness(1.5);
+    filter:hue-rotate(0deg) brightness(1.5);
+}
+.health6{
+	
+}
 .move {background: green; }
+
+/*the player color tints*/
+/*I had to make the animation frames a color in order for the hue to work*/
+/*this was much easier than having to draw everything*/
+.colorwhite{
+	-webkit-filter:hue-rotate(0deg) brightness(2);
+    filter:hue-rotate(0deg) brightness(2);
+}
+
+.colororange{
+	-webkit-filter:hue-rotate(45deg) brightness(1.2);
+    filter:hue-rotate(45deg) brightness(1.2);
+}
+
+.coloryellow{
+	-webkit-filter:hue-rotate(75deg) brightness(1.7);
+    filter:hue-rotate(75deg) brightness(1.7);
+}
+
+.colorgreen{
+	-webkit-filter:hue-rotate(120deg) brightness(1.1);
+    filter:hue-rotate(120deg) brightness(1.1);
+}
+
+.colorblue{
+	-webkit-filter:hue-rotate(170deg) brightness(1.2);
+    filter:hue-rotate(170deg) brightness(1.2);
+}
+
+.colorpurple{
+	-webkit-filter:hue-rotate(250deg) brightness(1);
+    filter:hue-rotate(250deg) brightness(1);
+}
+
+
+/*I have no idea why I named this shrink, it really just resizes the character image*/
+.shrink{ position: absolute;
+	top: -25%;
+	left: -68%;
+	width: 220%}
+
+/*flipped depeinging on the facing right boolean*/
+.shrinkflipped{         -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+
+position: absolute;
+	top: -25%;
+	left: -48%;
+	width: 220%;}
 
 .game {
   overflow: hidden;
-  max-width: 600px;
-  max-height: 450px;
+  max-width: 1200px;
+  max-height: 900px;
   position: relative;
+  
+}
+
+/*if they lost*/
+.lost .shrink{
+	-webkit-filter:hue-rotate(0deg) brightness(.5);
+    filter:hue-rotate(0deg) brightness(.5);
+}
+
+.lost .shrinkflipped{
+	-webkit-filter:hue-rotate(0deg) brightness(.5);
+    filter:hue-rotate(0deg) brightness(.5);
 }
